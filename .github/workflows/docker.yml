@@ -9,8 +9,8 @@ jobs:
     - name: Checkout source
       uses: actions/checkout@v4
     -name: Build images
-    run: |
-      cd Part7a
-      docker build -t ${{ secrets.DOCKER_USERNAME}}/al-app:Latest ./app  
-      docker build -t ${{ secrets.DOCKER_USERNAME}}/al-db-loader:Latest ./db-loader  
-      docker build -t ${{ secrets.DOCKER_USERNAME}}/al-email:Latest ./email  
+      run: |
+        cd Part7a
+        docker build -t ${{ secrets.DOCKER_USERNAME}}/al-app:Latest ./app  
+        docker build -t ${{ secrets.DOCKER_USERNAME}}/al-db-loader:Latest ./db-loader  
+        docker build -t ${{ secrets.DOCKER_USERNAME}}/al-email:Latest ./email  

@@ -13,10 +13,10 @@ services:
     email:
       build: email/.
       ports: 
-        - 25:25
+        - 587:587
       depends_on:
         - redis-server
       environment:
-        TO_ADDRESS: <your Quantic email>
-        FROM_ADDRESS: <new Gmail email>
-        FROM_PASSWORD: <Gmail app password>
+        TO_ADDRESS: dumisani.ndlovu@nust.ac.zw
+        FROM_ADDRESS: ndumisani@gmail.com
+        FROM_PASSWORD: oqrnoyswwfndpkhd
